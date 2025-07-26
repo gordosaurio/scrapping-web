@@ -26,7 +26,7 @@ def ask_valid_date():
 
 
 def configure_mobile_driver():
-    mobile_emulation = { "deviceName": "iPhone X" }
+    mobile_emulation = {"deviceName": "iPhone X"}
     options = Options()
     options.add_experimental_option("mobileEmulation", mobile_emulation)
     options.add_argument("--disable-blink-features=AutomationControlled")
@@ -36,7 +36,7 @@ def configure_mobile_driver():
     return driver
 
 
-def type_with_delay(element, text, delay=0.3):
+def type_with_delay(element, text, delay=0.15):
     for letter in text:
         element.send_keys(letter)
         time.sleep(delay)
@@ -45,16 +45,16 @@ def type_with_delay(element, text, delay=0.3):
 def select_city(driver, wait, city, city_container_xpath, input_xpath, suggestion_xpath_prefix):
     container = wait.until(EC.element_to_be_clickable((By.XPATH, city_container_xpath)))
     container.click()
-    time.sleep(0.5)
+    time.sleep(0.4)
 
     search_input = wait.until(EC.element_to_be_clickable((By.XPATH, input_xpath)))
     search_input.click()
     search_input.clear()
-    type_with_delay(search_input, city)
+    type_with_delay(search_input, city, delay=0.1)
 
     first_option = wait.until(EC.element_to_be_clickable((By.XPATH, suggestion_xpath_prefix)))
     first_option.click()
-    time.sleep(1)
+    time.sleep(0.8)
 
 
 def navigate_and_select_date(driver, wait, date_dt, date_str):
@@ -124,8 +124,15 @@ def navigate_and_select_date(driver, wait, date_dt, date_str):
     except Exception as e:
         print(f"[ERROR] Could not select day {target_day}: {e}")
 
-    print("[INFO] Pausing for 15 seconds to visually verify selected date in the calendar...")
-    time.sleep(15)
+    print("[INFO] Pausing for 5 seconds to visually verify selected date in the calendar...")
+    time.sleep(2)
+
+
+def click_search_button(driver, wait):
+    search_button_xpath = '//*[@id="root"]/div/div[3]/button'
+    search_button = wait.until(EC.element_to_be_clickable((By.XPATH, search_button_xpath)))
+    search_button.click()
+    print("[INFO] Search button clicked, search initiated.")
 
 
 def main():
@@ -134,10 +141,10 @@ def main():
     departure_date, departure_date_str = ask_valid_date()
 
     driver = configure_mobile_driver()
-    wait = WebDriverWait(driver, 30)
+    wait = WebDriverWait(driver, 20)
 
     driver.get("https://m.redbus.co/")
-    time.sleep(3)
+    time.sleep(2)
 
     select_city(
         driver, wait, origin_city,
@@ -154,6 +161,12 @@ def main():
     )
 
     navigate_and_select_date(driver, wait, departure_date, departure_date_str)
+
+    time.sleep(1)
+
+    click_search_button(driver, wait)
+
+    time.sleep(3)
 
     driver.quit()
 
