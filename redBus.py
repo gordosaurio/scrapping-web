@@ -9,7 +9,8 @@ from selenium.webdriver.chrome.options import Options
 import time
 
 
-origin_city = input("Ingrese la ciudad de origen: ")
+start_city = input("Ingrese la ciudad de origen: ")
+final_city = input("Ingrese la ciudad de destino: ")
 
 options = Options()
 options.add_argument("--disable-blink-features=AutomationControlled")
@@ -23,22 +24,40 @@ wait = WebDriverWait(driver, 20)
 
 time.sleep(2)
 
-origin_field = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="src"]')))
-origin_field.click()
-origin_field.clear()
+start_field = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="src"]')))
+start_field.click()
+start_field.clear()
 
-for index, letter in enumerate(origin_city):
-    origin_field.send_keys(letter)
+for index, letter in enumerate(start_city):
+    start_field.send_keys(letter)
     time.sleep(0.3)
 
 time.sleep(2)
 
-origin_field.send_keys(Keys.ARROW_DOWN)
+start_field.send_keys(Keys.ARROW_DOWN)
 time.sleep(0.2)
-origin_field.send_keys(Keys.ARROW_UP)
+start_field.send_keys(Keys.ARROW_UP)
 time.sleep(0.2)
-origin_field.send_keys(Keys.ENTER)
+start_field.send_keys(Keys.ENTER)
 
-time.sleep(5)
+time.sleep(2)
+
+final_field = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="dest"]')))
+final_field.click()
+final_field.clear()
+
+for index, letter in enumerate(final_city):
+    final_field.send_keys(letter)
+    time.sleep(0.3)
+
+time.sleep(2)
+
+final_field.send_keys(Keys.ARROW_DOWN)
+time.sleep(0.2)
+final_field.send_keys(Keys.ARROW_UP)
+time.sleep(0.2)
+final_field.send_keys(Keys.ENTER)
+
+time.sleep(2)
 
 driver.quit()
