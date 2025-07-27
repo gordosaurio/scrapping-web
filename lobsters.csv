@@ -1,0 +1,26 @@
+#,votes,title,url,tags,domain,author,post_time,post_datetime,comments
+1,33,Development shells with Nix: four quick examples,https://michael.stapelberg.ch/posts/2025-07-27-dev-shells-with-nix-4-quick-examples/,nix,michael.stapelberg.ch,stapelberg,13 hours ago,2025-07-27 01:54:49-0500,12
+2,22,The JJ VCS Workshop: A Zero-to-Hero Speedrun,https://github.com/jkoppel/jj-workshop,vcs,github.com/jkoppel,jkoppel,7 hours ago,2025-07-27 07:22:19-0500,2
+3,26,"copyparty: portable file server with resumable uploads, dedup, WebDAV, and more",https://github.com/9001/copyparty,"privacy, python",github.com/9001,ysun,9 hours ago,2025-07-27 05:39:07-0500,0
+4,10,TIL: Exception.add_note,https://daniel.feldroy.com/posts/til-2025-05-exception-add_note,python,daniel.feldroy.com,spookylukey,59 minutes ago,2025-07-27 14:01:16-0500,no
+5,44,"Wren - a small, fast, class-based concurrent scripting language",https://github.com/wren-lang/wren,plt,github.com/wren-lang,mccd,20 hours ago,2025-07-26 18:05:15-0500,15
+6,24,Resizable structs in Zig,https://tristanpemble.com/resizable-structs-in-zig/,zig,tristanpemble.com,rvrb,22 hours ago,2025-07-26 16:57:06-0500,5
+7,20,Getting decent error reports in Bash when you're using 'set -e',https://utcc.utoronto.ca/~cks/space/blog/programming/BashGoodSetEReports,"practices, programming",utcc.utoronto.ca,telemachus,19 hours ago,2025-07-26 19:23:12-0500,5
+8,11,LLMs are bad at returning code in JSON,https://aider.chat/2024/08/14/code-in-json.html,vibecoding,aider.chat,pcwelder,10 hours ago,2025-07-27 04:53:03-0500,0
+9,3,Protest footage blocked as online safety act comes into force,https://freespeechunion.org/protest-footage-blocked-as-online-safety-act-comes-into-force/,law,freespeechunion.org,dfawcus,20 minutes ago,2025-07-27 14:40:33-0500,0
+10,1,Revontuli Colorscheme Collection,https://codeberg.org/akselmo/Revontuli,design,codeberg.org,Aks,47 minutes ago,2025-07-27 14:13:03-0500,0
+11,48,It's time for modern CSS to kill the SPA,https://www.jonoalderson.com/conjecture/its-time-for-modern-css-to-kill-the-spa/,"css, web",jonoalderson.com,eduard,34 hours ago,2025-07-26 04:01:51-0500,21
+12,33,From Async/Await to Virtual Threads,https://lucumr.pocoo.org/2025/7/26/virtual-threads/,python,lucumr.pocoo.org,ngrilly,31 hours ago,2025-07-26 07:04:54-0500,16
+13,22,Perfecting anti-aliasing on signed distance functions,https://blog.pkh.me/p/44-perfecting-anti-aliasing-on-signed-distance-functions.html,graphics,blog.pkh.me,ubitux,29 hours ago,2025-07-26 09:36:45-0500,3
+14,15,Test results for AMD Zen 5,https://www.agner.org/forum/viewtopic.php?t=287&start=11,"hardware, performance",agner.org,fanf,22 hours ago,2025-07-26 16:04:12-0500,2
+15,18,Optimi-Zi(n)g Sudoku-Solving,https://log.pfad.fr/2025/optimi-zig-sudoku-solving/,"performance, zig",log.pfad.fr,oliverpool,27 hours ago,2025-07-26 11:45:50-0500,0
+16,29,Heredocs Can Make Your Bash Scripts Self-Documenting,https://holdtherobot.com/blog/heredocs-can-make-your-bash-scripts-self-documenting/,linux,holdtherobot.com,raymii,33 hours ago,2025-07-26 06:00:03-0500,17
+17,1,printSim: a command-line python program that turns gcode into realistic 3d printer sound,https://github.com/dannyboy1996/printSim,python,github.com/dannyboy1996,scruss,1 hour ago,2025-07-27 13:15:00-0500,no
+18,1,OverHAuL: Harnessing Automation for C Libraries with Large Language Models,https://kchousos.github.io/BSc-Thesis/,"ai, security, testing",kchousos.github.io,Kchousos,7 hours ago,2025-07-27 07:22:35-0500,no
+19,9,How to configure X11 in a simple way,https://eugene-andrienko.com/en/it/2025/07/24/x11-configuration-simple.html,unix,eugene-andrienko.com,rau,19 hours ago,2025-07-26 19:31:13-0500,0
+20,148,Lobsters Interview with Technomancy,/s/terwiu/lobsters_interview_with_technomancy,"interview, person",N/A,veqq,46 hours ago,2025-07-25 16:38:09-0500,10
+21,4,Fast and cheap bulk storage: using LVM to cache HDDs on SSDs,https://quantum5.ca/2025/05/11/fast-cheap-bulk-storage-using-lvm-to-cache-hdds-on-ssds/,programming,quantum5.ca,Riolku,16 hours ago,2025-07-26 22:37:12-0500,0
+22,8,Specials (2021),https://www.brendangregg.com/specials.html,"satire, unix",brendangregg.com,indigo,13 hours ago,2025-07-27 01:50:04-0500,no
+23,3,The Chaos of AI Agents,https://www.youtube.com/watch?v=2YYjPs8t8MI,"video, art, vibecoding",youtube.com,epidemian,13 hours ago,2025-07-27 01:09:40-0500,0
+24,4,exosphere: A simple centralized patch management and reporting tool for unix systems,https://github.com/mrdaemon/exosphere,"devops, release",github.com/mrdaemon,JohnBlund,17 hours ago,2025-07-26 21:49:34-0500,no
+25,22,Can LLMs Do Accounting?,https://accounting.penrose.com/,vibecoding,accounting.penrose.com,ohrv,39 hours ago,2025-07-25 23:38:35-0500,6
